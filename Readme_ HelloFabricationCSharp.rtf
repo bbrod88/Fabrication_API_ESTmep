@@ -1,0 +1,39 @@
+Application: HelloFabricationCSharp
+Fabrication Products: ESTmep, CAMduct
+Fabrication Version: 2016
+Programming Language: C#
+Skill Level: Beginner 
+Category: Basics
+Type: ExternalApplication
+
+Subject: Add ExternalApplication to the Fabrication user interface.
+Summary: 
+Shows how a basic ExternalApplication can be added to the Fabrication user interface. It uses a MessageBox to communicate information to the interactive user.
+
+Classes: 
+Autodesk.Fabrication.ApplicationServices.Application
+Autodesk.Fabrication.Job
+
+Project Files: 
+·	Command.cs
+This file contains a class named “Command” which inherits from the IExternalApplication interface. The function of the class is to add an external application to Autodesk Fabrication and create a Message Box in the Execute method to show some information to the user. The user can do anything in Execute method like reading Items and Database entries.
+
+Description: 
+The sample defines a class which inherits from IExternalApplication interface, and implements the Execute method, creating a message box in it’s body.
+
+⦁	The Execute method displays the following messgaebox.
+
+
+
+⦁	The Terminate method displays the following dialog.
+
+
+
+⦁	Adding some Items to the Job and running the command again displays the following.
+
+
+
+
+Instructions: 
+1.	Run the command.
+2.	Two message boxes will appear one after another as the Execute and Terminate methods are run.
